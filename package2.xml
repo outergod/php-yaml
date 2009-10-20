@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package packagerversion="1.7.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>yaml</name>
+  <channel>nonpecl.rubay.de</channel>
+  <summary>LibYAML binding for PHP</summary>
+  <description>LibYAML binding for PHP</description>
+  <lead>
+    <name>Alexander Kahl</name>
+    <user>e-user</user>
+    <email>e-user@gmx.net</email>
+    <active>yes</active>
+  </lead>
+  <date>2008-09-29</date>
+  <time>00:10:02</time>
+  <version>
+    <release>0.4.0</release>
+    <api>0.4.0</api>
+  </version>
+  <stability>
+    <release>beta</release>
+    <api>beta</api>
+  </stability>
+  <license uri="http://www.gnu.org/licenses/lgpl.html">LGPLv3+</license>
+  <notes>* First version with emitter support * LibYAML error reporting support</notes>
+  <contents>
+    <dir name="/">
+      <file md5sum="b07477db26c55c25fd29de1cafac4ef6" name="test-parse.php" role="php" />
+      <file md5sum="87b9b4eb730a80161918afc4800e5e79" name="README" role="doc" />
+      <file md5sum="8e0c1aae77148c12a91939f882ade2f5" name="zval_zval.h" role="src" />
+      <file md5sum="6a6a8e020838b23406c81b19c1d46df6" name="COPYING.LIB" role="doc" />
+      <file md5sum="23938539af0fe9ae589fa7ef78a2a6ea" name="run-tests.php" role="php" />
+      <dir name="tests">
+        <file md5sum="48b2685a7b98d6f882b53e36b62ee21c" name="yaml_emit_file.phpt" role="test" />
+        <file md5sum="c99203df86ef26aa1949603f27a888d4" name="yaml_parse_url.phpt" role="test" />
+        <file md5sum="dbd80af8bfde03005f2e75aadad662e0" name="yaml_parse_file.phpt" role="test" />
+        <file md5sum="0c63d6d2b1c6fa435b185c85c92a9b7c" name="yaml_emit.phpt" role="test" />
+        <file md5sum="d8c8f076460704eb98054763c5e9ef32" name="yaml_parse.phpt" role="test" />
+      </dir>
+      <file md5sum="514a53dcef5eccb4342fad8dd97870c0" name="test-parse-emit.php" role="php" />
+      <file md5sum="b270075d77bfbf455d692f50e477d2d7" name="zval_refcount.h" role="src" />
+      <file md5sum="273f48b6656cfc765c771117d51eb7df" name="config.m4" role="src" />
+      <file md5sum="de7d0fcdda1b63be83b26a89bf8ad930" name="parser.h" role="src" />
+      <file md5sum="5d795e5e5ed8355ba38c16960e74ab2b" name="emitter.c" role="src" />
+      <file md5sum="63b90258ebedeecddfff1166a55f1c5d" name="parser.c" role="src" />
+      <file md5sum="34b858aafe34af57233ec4d02b91adfe" name="yaml.c" role="src" />
+      <file md5sum="88384d970ea012aeeda5fe13f74343b1" name="CREDITS" role="doc" />
+      <file md5sum="73cabac4c2a02138b2c92aec80b97cba" name="php_yaml.h" role="src" />
+      <file md5sum="cf516ec5b7c4f0d4d8c760ca4dfb8c8d" name="test-utf8.php" role="php" />
+      <dir name="manual">
+        <dir name="yaml">
+          <file md5sum="04909150c836a9ced47097c01878afdd" name="configure.xml" role="data" />
+          <file md5sum="7b899de4228937c221406f3c8852cf93" name="reference.xml" role="data" />
+          <dir name="functions">
+            <file md5sum="890176adfba6f0505673de295d00b314" name="yaml-emit-file.xml" role="data" />
+            <file md5sum="7aaaab16f603c43014db407b07e8c24f" name="yaml-emit.xml" role="data" />
+            <file md5sum="134139824e735005c5dcdb6209afc068" name="yaml-parse-url.xml" role="data" />
+            <file md5sum="5c5f0fbe3abfe01af9c4dd4e7fc70004" name="yaml-parse-file.xml" role="data" />
+            <file md5sum="554c02d92c1ddfff7f328e7b4e9ce531" name="yaml-parse.xml" role="data" />
+          </dir>
+        </dir>
+      </dir>
+      <file md5sum="d32239bcb673463ab874e80d47fae504" name="COPYING" role="doc" />
+      <file md5sum="329119ba6dff74da19166e9e387dffee" name="emitter.h" role="src" />
+      <dir name="examples">
+        <file md5sum="cc3853d86d26c7b3fc80ad20f7e49021" name="example05.yaml" role="data" />
+        <file md5sum="611ece8cff5d3bf54a199a4502fa1b04" name="test2.php" role="php" />
+        <file md5sum="44fb615a99777aed9421a1a6e6b3eb77" name="example13.yaml" role="data" />
+        <file md5sum="2d5bc72d61f3ce60f2bb72292c2de180" name="example17.yaml" role="data" />
+        <file md5sum="e74af332f2024a1ad06153ee700236ec" name="example06.yaml" role="data" />
+        <file md5sum="e167275374534dd38be8a0d3b433c567" name="example07.yaml" role="data" />
+        <file md5sum="31656a920955787fb7f058cbaa200cbd" name="example99.yaml" role="data" />
+        <file md5sum="c6a6598952af8cd305e4020d4bdbf12a" name="example11.yaml" role="data" />
+        <file md5sum="bd72e3935c63fb07d02a54092a950fba" name="example00.yaml" role="data" />
+        <file md5sum="dc10db628d506a077842d046cbef2994" name="test-all.zsh" role="script" />
+        <file md5sum="467a09b7ac007490e933de342828429d" name="example24.yaml" role="data" />
+        <file md5sum="5366721158c58d072e748f61af1c7e00" name="example10.yaml" role="data" />
+        <file md5sum="4e55ced9d0542a2a047aba45f792ee1d" name="example21.yaml" role="data" />
+        <file md5sum="cbd9c56e2d4dbbd61c81d2232e67b24b" name="example28.yaml" role="data" />
+        <file md5sum="eb4873431fb2202a24dbec4cff7b44e1" name="example88.yaml" role="data" />
+        <file md5sum="dc7436f18c925b2750f7eab597ff2d88" name="example12.yaml" role="data" />
+        <file md5sum="94eecf33d29dd159e4837be68a79040c" name="example02.yaml" role="data" />
+        <file md5sum="037af9e414b3289dc335c178130e9187" name="example04.yaml" role="data" />
+        <file md5sum="6fc0d4e709f9827b2cb33649b930aaff" name="test4.php" role="php" />
+        <file md5sum="d38e9bca2338100a27d016385053a8c5" name="test3.php" role="php" />
+        <file md5sum="a952f4ff534b906f07e857e8868789e4" name="example14.yaml" role="data" />
+        <file md5sum="4b68d38d4e17890f8c289e68c97eb64a" name="example22.yaml" role="data" />
+        <file md5sum="8ae3fa1f0083cb440065971be2a322a1" name="example23.yaml" role="data" />
+        <file md5sum="a7d8586d7f1fe9f7465627a8845e52f4" name="example25.yaml" role="data" />
+        <file md5sum="b28521366b64ace95bd7fb9f60358658" name="example20.yaml" role="data" />
+        <file md5sum="311d95fcd6d17929a6036040c7347ab5" name="example16.yaml" role="data" />
+        <file md5sum="eb51b1a5f8852511e288f5e8084156ba" name="example08.yaml" role="data" />
+        <file md5sum="70d96657c052601dca17f3d8042ed1cb" name="example19.yaml" role="data" />
+        <file md5sum="0b3bb4cbc184c04c5c074f8af88db89c" name="example18.yaml" role="data" />
+        <file md5sum="1086124e2c98437385b3e206ede0414d" name="example03.yaml" role="data" />
+        <file md5sum="f669acfa78351a0c07243958275ad56c" name="test.php" role="php" />
+        <file md5sum="b1d017d1378cbe3309a96d7d5b792a57" name="example01.yaml" role="data" />
+        <file md5sum="fc6468509e854b691a448a7990decc64" name="example15.yaml" role="data" />
+        <file md5sum="f669b5f88df5a8fc3cd0a3c9ad0e38da" name="example27.yaml" role="data" />
+        <file md5sum="6e22c64ea9752d5fd5f16801d9fe5773" name="example09.yaml" role="data" />
+        <file md5sum="74b4275ed391dbedf24547342ad9e60b" name="example26.yaml" role="data" />
+      </dir>
+      <file md5sum="44a235f29fea653dc6bb7149391327a3" name="test-emit.php" role="php" />
+    </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>4.3.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.7.0</min>
+      </pearinstaller>
+    </required>
+  </dependencies>
+  <providesextension>yaml</providesextension>
+  <extsrcrelease />
+  <changelog>
+    <release>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <version>
+        <release>0.4.0</release>
+        <api>0.4.0</api>
+      </version>
+      <date>2008-09-28</date>
+      <notes>First release on nonpecl.</notes>
+    </release>
+  </changelog>
+</package>
