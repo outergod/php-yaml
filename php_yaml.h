@@ -34,7 +34,7 @@
 #include <Zend/zend_extensions.h>
 
 #define PHP_YAML_EXTNAME "yaml"
-#define PHP_YAML_VERSION "0.4.0"
+#define PHP_YAML_VERSION "0.4.1"
 
 #ifdef ZTS
 #include "TSRM.h"

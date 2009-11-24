@@ -54,6 +54,29 @@ static zend_module_dep yaml_deps[] = {
 
 /* {{{ argument information */
 #ifdef ZEND_BEGIN_ARG_INFO
+/* Handle PHP 5.3 correctly */
+#if ZEND_EXTENSION_API_NO >= 220090626
+ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
+  ZEND_ARG_INFO (0, input)
+  ZEND_ARG_INFO (0, pos)
+  ZEND_ARG_INFO (1, ndocs)
+  ZEND_ARG_ARRAY_INFO (0, callbacks, 0)
+  ZEND_END_ARG_INFO ()
+
+ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse_file, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
+  ZEND_ARG_INFO (0, filename)
+  ZEND_ARG_INFO (0, pos)
+  ZEND_ARG_INFO (1, ndocs)
+  ZEND_ARG_ARRAY_INFO (0, callbacks, 0)
+  ZEND_END_ARG_INFO ()
+
+ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse_url, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
+  ZEND_ARG_INFO (0, url)
+  ZEND_ARG_INFO (0, pos)
+  ZEND_ARG_INFO (1, ndocs)
+  ZEND_ARG_ARRAY_INFO (0, callbacks, 0)
+  ZEND_END_ARG_INFO ()
+#else
 static ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
   ZEND_ARG_INFO (0, input)
   ZEND_ARG_INFO (0, pos)
@@ -61,19 +84,20 @@ static ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse, ZEND_SEND_BY_VAL, ZEND_RETURN
   ZEND_ARG_ARRAY_INFO (0, callbacks, 0)
   ZEND_END_ARG_INFO ()
 
-  static ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse_file, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
+static ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse_file, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
   ZEND_ARG_INFO (0, filename)
   ZEND_ARG_INFO (0, pos)
   ZEND_ARG_INFO (1, ndocs)
   ZEND_ARG_ARRAY_INFO (0, callbacks, 0)
   ZEND_END_ARG_INFO ()
 
-  static ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse_url, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
+static ZEND_BEGIN_ARG_INFO_EX (arginfo_yaml_parse_url, ZEND_SEND_BY_VAL, ZEND_RETURN_VALUE, 1)
   ZEND_ARG_INFO (0, url)
   ZEND_ARG_INFO (0, pos)
   ZEND_ARG_INFO (1, ndocs)
   ZEND_ARG_ARRAY_INFO (0, callbacks, 0)
   ZEND_END_ARG_INFO ()
+#endif
 #else
 #define arginfo_yaml_parse third_arg_force_ref
 #define arginfo_yaml_parse_file third_arg_force_ref
